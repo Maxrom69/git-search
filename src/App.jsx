@@ -22,6 +22,7 @@ import {
   TrendingUp,
   X,
 } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { deriveFilterOptions, filterAndSortRepositories, limitResults, RESULT_LIMITS } from './lib/filterResults.js';
 
 const PERIODS = [
@@ -712,6 +713,7 @@ function App() {
           </div>
         </footer>
       </main>
+      <SpeedInsights />
     </div>
   );
 }
